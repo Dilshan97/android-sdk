@@ -4,7 +4,7 @@
 
  - Truecaller app needs to be installed on the user's device. User starts by clicking on your defined CTA ( Login / Verify / Signup etc. ) or you can even directly trigger the Truecaller verification anywhere in your app flow. User would then be shown the standard Truecaller profile verification dialog asking for user's consent. The user authorizes by clicking verify and their Truecaller profile would be shared with the app as response object
  
- ![Diagram](https://github.com/singhalyogesh/truecaller-sdk-v0.7/blob/master/truecaller_user_verification_flow.png)
+ ![Diagram](https://user-images.githubusercontent.com/6050698/43194936-442d85e0-9021-11e8-9347-c2930df43cbe.png)
  
 ## Getting Started
 
