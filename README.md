@@ -20,6 +20,8 @@ keytool -list -v -keystore mystore.keystore
 
 Once we have received the package name and the SHA-1 signing-fingerprint, we will provide you with a unique "PartnerKey" which you need to include in your project to authorize all verification requests.
 
+NOTE : While generating your release build and the corresponding partnerKey, please refer to this section for [generating partner key for release build](#generating-partner-key-for-release-build).
+
 
 ### Using the SDK with your Android Studio Project
 
@@ -210,6 +212,14 @@ Every request sent via a Truecaller app that supports truecaller SDK 0.7 has a u
 2. In `ITrueCallback.onSuccesProfileShared(TrueProfile)` verify that the previously generated identifier matches the one in TrueProfile.requestNonce.
 
 IMPORTANT: Truecaller SDK already verifies the Request-Response correlation before forwarding it to the your app.
+
+#### Generating Partner Key for Release Build
+
+Different app builds ( debug / release ) have different SHA1 fingerprints and hence would have different & unique partner keys, as a single partner key corresponds to a particular combination of package name and SHA1. You need to manage your debug / release builds by creating separate keys.
+
+In case you are using the app signing feature of google play store, when you upload your release build to the google play store, it assigns a new SHA1 fingerprint to your app - which might lead to UNAUTHORISED_PARTNER_KEY error for your app, since the partnerKey used by you in your app config was generated for a different SHA1, and hence won't work for the new SHA1.
+
+In this scenario, you need to note down the new SHA1 of your app from the Google Play Developer Console and then use this to generate a corresponding new "partnerKey" from the Truecaller Developer Portal. Use this new key in your app config and then upload the build on play store
 
 ### Supported languages for profile customization
    
