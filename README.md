@@ -213,7 +213,7 @@ Every request sent via a Truecaller app that supports truecaller SDK 0.7 has a u
 
 IMPORTANT: Truecaller SDK already verifies the Request-Response correlation before forwarding it to the your app.
 
-#### Generating Partner Key for Release Build
+#### C. Generating Partner Key for Release Build
 
 Different app builds ( debug / release ) have different SHA1 fingerprints and hence would have different & unique partner keys, as a single partner key corresponds to a particular combination of package name and SHA1. You need to manage your debug / release builds by creating separate keys.
 
