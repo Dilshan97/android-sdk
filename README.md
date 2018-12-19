@@ -70,12 +70,7 @@ NOTE : While generating your release build and the corresponding partnerKey, ple
     </application>
     ```
    
-6. Check if the truecaller app is present on the user's device or not by using the following method
-    ```java
-    TrueSDK.getInstance().isUsable()
-    ```
-    
-    Accordingly, if the truecaller app is present on the device - Create a TrueSdkScope object by using the appropriate configurational settings and use it to initialize the TrueSDK in your android activity's onCreate method:
+6. Create a TrueSdkScope object by using the appropriate configurational settings and use it to initialize the TrueSDK in your android activity's onCreate method:
     
      ```java
      TrueSdkScope trueScope = new TrueSdkScope.Builder(this, sdkCallback)
@@ -86,6 +81,11 @@ NOTE : While generating your release build and the corresponding partnerKey, ple
                 
      TrueSDK.init(trueScope);	
      ```
+    
+    Once you initialize the TrueSDK using the init() method, you can check if the truecaller app is present on the user's device or not by using the following method
+    ```java
+    TrueSDK.getInstance().isUsable()
+    ```
     
     TrueSDK v0.7 provides you with capabilities to configure the following settings -
 
