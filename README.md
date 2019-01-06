@@ -20,7 +20,7 @@ keytool -list -v -keystore mystore.keystore
 
 Once we have received the package name and the SHA-1 signing-fingerprint, we will provide you with a unique "PartnerKey" which you need to include in your project to authorize all verification requests.
 
-NOTE : While generating your release build and the corresponding partnerKey, please refer to this section for [generating partner key for release build](#generating-partner-key-for-release-build).
+NOTE : While generating your release build and the corresponding partnerKey, please refer to this section for [c-generating partner key for release build](#generating-partner-key-for-release-build).
 
 
 ### Using the SDK with your Android Studio Project
