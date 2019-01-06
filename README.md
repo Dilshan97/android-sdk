@@ -10,7 +10,7 @@
 
 ### Account Setup
 
-To ensure the authenticity of the interactions between your app and Truecaller, you need to generate a partner key from the truecaller developer portal ( https://developer.truecaller.com/auth/login ) by providing us with your package name and SHA-1 signing-fingerprint.
+To ensure the authenticity of the interactions between your app and Truecaller, you need to generate a partner key from the truecaller developer portal ( https://developer.truecaller.com/login ) by providing us with your package name and SHA-1 signing-fingerprint.
 
 You package name corresponds to the applicationId in your app level build.gradle file. Use the following command to get the fingerprint:
 
